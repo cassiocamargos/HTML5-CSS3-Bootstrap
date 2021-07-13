@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title> Home </title>
+<link rel = "stylesheet" type="text/css" href="est_index.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<style>
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 275px;
+    margin-top: 30px;
+    margin-left:135px;
+
+ }
+    
+   
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+  
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+   
+
+}
+
+div.desc {
+    padding:1px;
+    text-align: center;
+
+}
+}
+.item{
+  float: left;
+  display: inline;
+  width: 310%;
+  text-align: center;
+}
+.item a{
+  color:#FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: color 0.3s; 
+    transition: color 0.3s;
+
+
+}
+</style>
+
+
+</head>
+
+<body bgcolor="black">
+<div class="container" class="w3-responsive">
+
+  <div class="banner"></div>
+    
+  <div class="fundoPreto">
+  	<ul class="menu"> 
+		<li class="item"><a href="index.html">Home</a></li>
+		<li class="item"><a href="bandeiras.html">Bandeiras</a></li>
+		<li class="item"><a href="fotos3.html">Fotos</a></li>
+		<li class="item"><a href="historiaband.html">Historia</a></li>
+	 </ul>
+	
+  </div>
+  
+  <div class="imagens" >
+  		<div class="btnEsquerda"><</div>
+  			<div class="btnDireita">></div>
+  				<div class="imagem1"></div>
+  				<div class="imagem2" hidden></div>
+  				<div class="imagem3" hidden></div>
+  				<div class="imagem4" hidden></div>
+</div>
+ 	</div>
+ 		</div>
+ 			</div>
+ 				</div>
+ 					</div>
+ 						</div> 
+
+
+
+
+  <h1 class="titulo2">HISTÓRIA</h1>
+
+    <div>
+     <ul>
+    <li> <img src="IMG/historia/1.jpg" class="gallery"/></li></ul></div>
+
+
+ 
+    <div>
+    <p class="texto">
+    A Independência do Brasil é celebrada em todo dia 07 de setembro. Essa comemoração acontece desde a época do Primeiro Império, que, a cada ano, rememorava a ocasião em que o país se tornou independente de Portugal no ano de 1822.
+    D. Pedro tomou uma série de medidas que desagradaram a metrópole, pois preparavam caminho para a independência do Brasil. D. Pedro convocou uma Assembleia Constituinte, organizou a Marinha de Guerra, obrigou as tropas de Portugal a voltarem para o reino. Determinou também que nenhuma lei de Portugal seria colocada em vigor sem o "cumpra-se", ou seja, sem a sua aprovação. Além disso, o futuro imperador do Brasil, conclamava o povo a lutar pela independência.
+ 
+    O príncipe fez uma rápida viagem à Minas Gerais e a São Paulo para acalmar setores da sociedade que estavam preocupados com os últimos acontecimento, pois acreditavam que tudo isto poderia ocasionar uma desestabilização social. Durante a viagem, D. Pedro recebeu uma nova carta de Portugal que anulava a Assembleia Constituinte e exigia a volta imediata dele para a metrópole.
+ 
+    Estas notícias chegaram as mãos de D. Pedro quando este estava em viagem de Santos para São Paulo. Próximo ao riacho do Ipiranga, levantou a espada e gritou: "Independência ou Morte !". Este fato ocorreu no dia 7 de setembro de 1822 e marcou a Independência do Brasil. No mês de dezembro de 1822, D. Pedro foi declarado imperador do Brasil.
+    </p>
+  </div>
+
+<div>
+     <ul>
+      <li>
+      
+  
+<div class="gallery">
+ <a target="_blank" href=>
+ <img src="Img/ind.jpg"  width="300" height="270">
+ </a>
+ <div class="desc"></div>
+ </div>
+
+ <div class="gallery">
+ <a target="_blank" href=>
+ <img src="Img/ind1.jpg"  width="300" height="270">
+ </a>
+ <div class="desc"></div>
+ </div>
+
+<div class="gallery">
+ <a target="_blank" href=>
+ <img src="Img/ind2.jpg"  width="300" height="270">
+ </a>
+ <div class="desc"></div>
+ </div>
+
+
+
+ </div>
+ <div class="espaco"></div>
+
+
+  <div class = "rodape">
+    <div class="rodape1">
+
+  
+  <div class = "rodape">
+   <div  class="rodape1"></div>
+    <div class="rodape2">Desenvolvido por:
+  	Asafe Toschi, 
+	Cassio Camargos, 
+	Maria Eduarda, 
+	Thierry Arnone 
+    </div>
+  </div> 
+
+
+
+<div>
+
+<script src="jquery.js"></script>
+<script type="text/javascript">
+
+	var imagemAtual = 1;
+
+	$(".btnDireita").click(function(){
+		$(".imagem" + imagemAtual).fadeOut();
+		if (imagemAtual == 4) {
+			$(".imagem1").fadeIn();
+			imagemAtual = 1;
+		}else{
+			$(".imagem" + (imagemAtual + 1)).fadeIn();
+			imagemAtual = imagemAtual + 1;
+		}
+	});
+	$(".btnEsquerda").click(function(){
+		$(".imagem" + imagemAtual).fadeOut();
+		if (imagemAtual == 1) {
+			$(".imagem4").fadeIn();
+			imagemAtual = 4;
+		}else{
+			$(".imagem" + (imagemAtual - 1)).fadeIn();
+			imagemAtual = imagemAtual - 1;
+		}
+	});
+</script>
+
+</body>
+</html>
