@@ -1,0 +1,23 @@
+@keyframes animacao-caixa{
+    from{
+        background-color: rgb(180, 0, 0);
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    to{
+        background-color: rgb(0, 0, 180);
+        border-radius: 100%;
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: rgb(180, 0, 0);
+    animation: animacao-caixa 2s 2s 2 alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
